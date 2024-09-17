@@ -1,16 +1,25 @@
-# flutterapp1
+User workout tracking application
+Overview:
 
-A new Flutter project.
+Hive Setup: Initialize Hive, register the required adapters, and store the workout data. 
+Data Models: Define the models for WorkoutSet and Workout and generate Hive adapters. 
+UI Components: Create the workout screen where users can log their exercises, weights, and repetitions. 
+Data Persistence: Store the workout data in Hive when the user saves a workout.
 
-## Getting Started
+Two Hive models:
 
-This project is a starting point for a Flutter application.
+WorkoutSet: This represents a single set of exercises. 
+Workout: This represents a complete workout, which contains multiple WorkoutSets.
 
-A few resources to get you started if this is your first Flutter project:
+Steps to Create the Screen:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Define Models: To represent each workout and set. 
+Build UI: To show a list of sets with form fields (exercise, weight, and repetitions). 
+Handle Logic: To add or remove sets and save the workout details.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Key Features in the Code:
+WorkoutSet Model: Represents each set with an exercise, weight, and repetitions.
+WorkoutScreen: Users can log their workouts with exercises, weights, and reps and save them to Hive. 
+WorkoutHistoryScreen: Displays all saved workouts, retrieved from Hive. 
+WorkoutSetCard: A card widget for each set, allowing the user to select an exercise and input the weight and repetitions. 
+Hive: Hive is used for local, offline data storage for fast, reliable access to saved workouts.
