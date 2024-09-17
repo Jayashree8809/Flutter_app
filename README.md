@@ -1,4 +1,4 @@
-User workout tracking application
+**User workout tracking application**
 Overview:
 
 Hive Setup: Initialize Hive, register the required adapters, and store the workout data. 
